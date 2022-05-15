@@ -1,4 +1,4 @@
-# datathonkers
+# Datathonkers
 
 ## Insurance Travel Assistant Chatbot
 
