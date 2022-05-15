@@ -2,7 +2,7 @@
 
 ## Insurance travel assistant chatbot
 
-###Team
+### Team
 #### Cristina Guzman
 #### Fernando Gonzalez
 #### Federico van Swaaij
