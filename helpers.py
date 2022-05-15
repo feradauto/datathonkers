@@ -31,21 +31,21 @@ logger.setLevel(logging.INFO)
 kendra_client = boto3.client('kendra')
 
 def query(payload):
-    headers = {"Authorization": f"Bearer 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"}
+    headers = {"Authorization": f"Bearer toke"}
     API_URL = "https://api-inference.huggingface.co/models/distilbert-base-uncased-distilled-squad"
     data = json.dumps(payload)
     response = requests.request("POST", API_URL, headers=headers, data=data)
     return json.loads(response.content.decode("utf-8"))
     
 def query2(payload):
-    headers = {"Authorization": f"Bearer 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"}
+    headers = {"Authorization": f"Bearer toke"}
     API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-cnn"
     data = json.dumps(payload)
     response = requests.request("POST", API_URL, headers=headers, data=data)
     return json.loads(response.content.decode("utf-8"))
 
 def query3(payload):
-    headers = {"Authorization": f"Bearer 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"}
+    headers = {"Authorization": f"Bearer token"}
     API_URL = "https://api-inference.huggingface.co/models/tuner007/pegasus_paraphrase"
     data = json.dumps(payload)
     response = requests.request("POST", API_URL, headers=headers, data=data)
